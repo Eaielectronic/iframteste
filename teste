@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+</head>
+<body>
+    <form>
+        <label for="champ1">Champ 1 :</label>
+        <input type="text" id="champ1" name="champ1"><br>
+
+        <label for="champ2">Champ 2 :</label>
+        <input type="text" id="champ2" name="champ2"><br>
+
+        <label for="champ3">Champ 3 :</label>
+        <input type="text" id="champ3" name="champ3"><br>
+
+        <input type="button" value="Valider" onclick="retournerValeurs()">
+    </form>
+
+    <script>
+        function retournerValeurs() {
+            const champ1 = document.getElementById("champ1").value;
+            const champ2 = document.getElementById("champ2").value;
+            const champ3 = document.getElementById("champ3").value;
+
+            // Vous pouvez faire ce que vous voulez avec les valeurs ici
+            console.log("Champ 1 :", champ1);
+            console.log("Champ 2 :", champ2);
+            console.log("Champ 3 :", champ3);
+        }
+    </script>
+</body>
+</html>
